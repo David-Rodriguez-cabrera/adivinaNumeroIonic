@@ -25,3 +25,40 @@
 #container a {
   text-decoration: none;
 }
+@media screen and (min-width: 100px) {
+  ion-content {
+    --ion-background-color: blue;
+  }
+}
+@media screen and (max-width: 900px) {
+  ion-content {
+    --ion-background-color: red;
+  }
+}
+@media screen and (max-width: 500px) {
+  ion-content {
+    --ion-background-color: green;
+  }
+  
+}
+@media screen and (orientation:portrait) {
+  ion-content {
+    --background: rgb(180, 180, 50);
+    #resetHorizontal{
+      display:none;
+    }
+    
+  }
+  
+}
+@media screen and (orientation:landscape) {
+  ion-content {
+    --background: rgb(112, 75, 6);
+    #resetVertical{
+      display: none;
+    }
+    
+  }
+  
+}
+
